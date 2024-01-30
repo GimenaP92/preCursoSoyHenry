@@ -4,55 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer sitio web</title>
-</head>
+    <!-- Enlace css -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- Enlace fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Roboto:wght@100&display=swap" rel="stylesheet">
+     <!--Enlace icono Font Awesome -->
+     <script src="https://kit.fontawesome.com/136c208edf.js" crossorigin="anonymous"></script>
 <body>
     <header>
-        <span>Home</span>
-        <span>Productos</span>
-        <span>Contacto</span>
+        <div class="container-navbar">
+        <a href="/index.html" target="_self" class="navbar">Home</a>
+        <a href="/index.html" target="_blank" class="navbar">Productos</a>
+        <a href="/index.html" target="_blank" class="navbar">Contacto</a>
+    </div>
     </header>
     <main>
        <section>
-        <h1>Cerveza artesanal</h1>
-        <h2>Bienvenidos a nuestra tienda online de cervezas artesanales, los invitamos a recorrer las especialidades</h2>
-    <div>
-        <img src="./imagenes/cerveza1.webp" alt="Imagen de una cerveza  roja">
+        <div class="container-titulo">
+            <h1 class="titulo">Cerveza artesanal</h1>
+             <h2>Bienvenidos a nuestra tienda online de cervezas artesanales, los invitamos a recorrer las especialidades</h2>
+        </div>
+        <div class="container-cards">
+        <div class="card">
+        <img src="./imagenes/cerveza1.webp" alt="Imagen de una cerveza  roja"  class="img-card">
         <h3>Red Ale</h3>
         <p>Se caracteriza por sus tonos intensos y su sabor robusto. Se elabora con una cuidadosa combinación de maltas tostadas que le otorgan su color rojo profundo.</p>
+        <hr>
         <ul>
             <li>Alcohol 4%</li>
             <li>Ibu 15</li>
         </ul>
     </div>  
-    <div>
-        <img src="./imagenes/cerveza2.webp" alt="Imagen de una cerveza ipa">
+    <div class="card">
+        <img src="./imagenes/cerveza2.webp" alt="Imagen de una cerveza ipa"  class="img-card">
         <h3>Ipa Hops</h3>
         <p>Se utiliza una mezcla especial de lúpulos de alta calidad que le confiere un amargor equilibrado y notas frescas de frutas tropicales como mango y piña.</p>
+        <hr>
         <ul>
             <li>Alcohol 5%</li>
             <li>Ibu 20</li>
         </ul>
     </div>
-    <div>
-        <img src="./imagenes/cerveza3.webp" alt="Imagen de una cerveza rubia">
+    <div class="card">
+        <img src="./imagenes/cerveza3.webp" alt="Imagen de una cerveza rubia" class="img-card" >
         <h3>Amber</h3>
         <p>La fermentación se realiza a temperaturas más bajas para resaltar la limpieza y la suavidad de los sabores, con toques sutiles de miel y cereales. </p>
+       <hr>
         <ul>
             <li>Alcohol 5%</li>
             <li>Ibu 13</li>
         </ul>
     </div>
+</div>
     </section> 
        
     </main>
     <footer>
-        <p>Síguenos en nuestras redes:</p>
-        <div>
-            <a href="https://www.facebook.com/tupagina" target="_blank" rel="noopener noreferrer">
-                <img src="facebook-icon.png" alt="Facebook">
+        <div class="container-footer">
+        <p>Seguinos en nuestras redes:</p>
+        <div class="container-iconos">
+              <a href="https://www.facebook.com/tupagina" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/tupagina" target="_blank" rel="noopener noreferrer">
-                <img src="instagram-icon.png" alt="Instagram">
+                <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
     </footer>
